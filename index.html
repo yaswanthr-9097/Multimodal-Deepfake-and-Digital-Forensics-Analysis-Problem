@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syntax Error — Multimodal Deepfake Detection System</title>
+    <meta name="description"
+        content="AI-powered multimodal deepfake and digital forensics detection system. Analyze images, videos, audio, and cross-modal streams for authenticity." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="project.css" />
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="bg-grid"></div>
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo-group">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="24,2 44,13 44,35 24,46 4,35 4,13" stroke="url(#hexGrad)" stroke-width="2"
+                            fill="rgba(0,255,200,0.05)" />
+                        <ellipse cx="24" cy="24" rx="8" ry="5.5" stroke="url(#eyeGrad)" stroke-width="1.5"
+                            fill="none" />
+                        <circle cx="24" cy="24" r="3" fill="url(#pupilGrad)" />
+                        <circle cx="25.5" cy="22.5" r="1" fill="rgba(255,255,255,0.9)" />
+                        <line x1="4" y1="13" x2="14" y2="24" stroke="rgba(0,255,200,0.3)" stroke-width="0.8" />
+                        <line x1="44" y1="13" x2="34" y2="24" stroke="rgba(0,255,200,0.3)" stroke-width="0.8" />
+                        <line x1="4" y1="35" x2="14" y2="24" stroke="rgba(0,255,200,0.3)" stroke-width="0.8" />
+                        <line x1="44" y1="35" x2="34" y2="24" stroke="rgba(0,255,200,0.3)" stroke-width="0.8" />
+                        <defs>
+                            <linearGradient id="hexGrad" x1="0" y1="0" x2="48" y2="48">
+                                <stop offset="0%" stop-color="#00ffc8" />
+                                <stop offset="100%" stop-color="#7b61ff" />
+                            </linearGradient>
+                            <linearGradient id="eyeGrad" x1="0" y1="0" x2="48" y2="0">
+                                <stop offset="0%" stop-color="#00ffc8" />
+                                <stop offset="100%" stop-color="#00b4ff" />
+                            </linearGradient>
+                            <radialGradient id="pupilGrad" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#00ffc8" />
+                                <stop offset="100%" stop-color="#00b4ff" />
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">Syntax Error</span>
+                    <span class="logo-tagline">Digital Forensics</span>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <span class="nav-badge">HackNex 2026</span>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <span class="pulse-dot"></span>
+                    Digital Forensics
+                </div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">Ensuring digital media authenticity through intelligent AI
+                        forensics.</span><br />
+                    <span class="gradient-text-2"></span>
+                </h1>
+                <p class="hero-subtitle">
+                    Upload single-stream media or run cross-modal fusion on video and audio simultaneously to uncover
+                    deepfake face-swaps, synthetic voices, and temporal desynchronization.
+                </p>
+                <div class="hero-chips">
+                    <div class="chip"><span>🖼️</span> Image Forensics</div>
+                    <div class="chip"><span>🎥</span> Video Analysis</div>
+                    <div class="chip"><span>🔊</span> Audio Detection</div>
+                    <div class="chip active-chip"><span>🎭</span> Cross-Modal Fusion (Video + Audio)</div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="scanner-box">
+                    <div class="scanner-face">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="face-svg">
+                            <circle cx="100" cy="100" r="80" stroke="rgba(0,255,200,0.15)" stroke-width="1" />
+                            <circle cx="100" cy="100" r="60" stroke="rgba(0,180,255,0.1)" stroke-width="1"
+                                stroke-dasharray="4 4" />
+                            <ellipse cx="78" cy="88" rx="10" ry="7" stroke="#00ffc8" stroke-width="1.5"
+                                fill="rgba(0,255,200,0.05)" />
+                            <ellipse cx="122" cy="88" rx="10" ry="7" stroke="#00ffc8" stroke-width="1.5"
+                                fill="rgba(0,255,200,0.05)" />
+                            <circle cx="78" cy="88" r="4" fill="rgba(0,255,200,0.7)" />
+                            <circle cx="122" cy="88" r="4" fill="rgba(0,255,200,0.7)" />
+                            <path d="M 70 118 Q 100 135 130 118" stroke="#00ffc8" stroke-width="1.5" fill="none"
+                                stroke-linecap="round" />
+                            <path d="M 60 75 L 70 70 L 90 72" stroke="rgba(0,255,200,0.4)" stroke-width="1"
+                                fill="none" />
+                            <path d="M 140 75 L 130 70 L 110 72" stroke="rgba(0,255,200,0.4)" stroke-width="1"
+                                fill="none" />
+                            <path d="M 20 20 L 20 40 M 20 20 L 40 20" stroke="#00ffc8" stroke-width="2" fill="none"
+                                opacity="0.8" />
+                            <path d="M 180 20 L 180 40 M 180 20 L 160 20" stroke="#00ffc8" stroke-width="2" fill="none"
+                                opacity="0.8" />
+                            <path d="M 20 180 L 20 160 M 20 180 L 40 180" stroke="#00ffc8" stroke-width="2" fill="none"
+                                opacity="0.8" />
+                            <path d="M 180 180 L 180 160 M 180 180 L 160 180" stroke="#00ffc8" stroke-width="2"
+                                fill="none" opacity="0.8" />
+                            <circle cx="78" cy="75" r="2" fill="#ff6b6b" class="detect-dot" />
+                            <circle cx="148" cy="105" r="2" fill="#ff6b6b" class="detect-dot" />
+                            <circle cx="95" cy="130" r="2" fill="#ff6b6b" class="detect-dot" />
+                        </svg>
+                        <div class="scanner-overlay">
+                            <div class="scan-bar"></div>
+                        </div>
+                    </div>
+                    <div class="scanner-labels">
+                        <div class="s-label s-label--red">⚠ Artifact #1</div>
+                        <div class="s-label s-label--yellow">~ AV Sync: -82ms</div>
+                        <div class="s-label s-label--green">✓ Spectrogram OK</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upload Section -->
+        <section class="upload-section" id="upload">
+            <div class="section-header">
+                <h2>Upload Media for Analysis</h2>
+                <p>Supports PNG, JPG, MP4, MOV, MP3, WAV, WebM & Cross-Modal Bundles — Max 200MB</p>
+            </div>
+
+            <!-- Media Modality Tabs -->
+            <div class="media-tabs" id="mediaTabs">
+                <button class="tab-btn active" data-type="image" id="tabImage">
+                    <span class="tab-icon">🖼️</span>
+                    <span>Image</span>
+                </button>
+                <button class="tab-btn" data-type="video" id="tabVideo">
+                    <span class="tab-icon">🎥</span>
+                    <span>Video</span>
+                </button>
+                <button class="tab-btn" data-type="audio" id="tabAudio">
+                    <span class="tab-icon">🔊</span>
+                    <span>Audio</span>
+                </button>
+                <button class="tab-btn tab-btn--cross" data-type="cross" id="tabCross">
+                    <span class="tab-icon">🎭</span>
+                    <span>Cross-Modal (Video + Audio)</span>
+                </button>
+            </div>
+
+            <!-- Standard Single Drop Zone -->
+            <div class="drop-zone" id="dropZone">
+                <input type="file" id="fileInput" accept="image/*" hidden />
+                <div class="drop-zone-content" id="dropContent">
+                    <div class="drop-icon" id="dropIcon">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <rect x="8" y="12" width="48" height="36" rx="4" stroke="url(#uploadGrad)" stroke-width="2"
+                                fill="rgba(0,255,200,0.04)" />
+                            <path d="M24 28 L32 20 L40 28" stroke="url(#uploadGrad)" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <line x1="32" y1="20" x2="32" y2="38" stroke="url(#uploadGrad)" stroke-width="2"
+                                stroke-linecap="round" />
+                            <path d="M20 44 L44 44" stroke="url(#uploadGrad)" stroke-width="2" stroke-linecap="round"
+                                opacity="0.4" />
+                            <defs>
+                                <linearGradient id="uploadGrad" x1="0" y1="0" x2="64" y2="64">
+                                    <stop offset="0%" stop-color="#00ffc8" />
+                                    <stop offset="100%" stop-color="#7b61ff" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <p class="drop-primary">Drop your file here, or <button class="browse-btn"
+                            id="browseBtn">browse</button></p>
+                    <p class="drop-secondary" id="dropHint">Supports JPG, PNG, GIF, WebP images</p>
+                </div>
+                <div class="drop-zone-preview" id="dropPreview" style="display:none">
+                    <div class="preview-media-wrap" id="previewWrap"></div>
+                    <div class="preview-info">
+                        <div class="preview-name" id="previewName"></div>
+                        <div class="preview-meta" id="previewMeta"></div>
+                        <button class="btn-remove" id="btnRemove">✕ Remove</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cross Modal Dual Drop Zone (Hidden by default) -->
+            <div class="cross-drop-grid" id="crossDropGrid" style="display:none">
+
+                <!-- Video Input Card -->
+                <div class="cross-drop-card" id="dropZoneVideo">
+                    <input type="file" id="fileInputVideo" accept="video/*" hidden />
+                    <div class="cross-card-header">
+                        <span class="badge-tag">Stream A</span>
+                        <h4>🎥 Video Track</h4>
+                    </div>
+                    <div class="cross-drop-content" id="dropContentVideo">
+                        <div class="cross-icon">🎬</div>
+                        <p class="drop-primary">Drop video file or <button class="browse-btn"
+                                id="browseBtnVideo">browse</button></p>
+                        <p class="drop-secondary">MP4, MOV, WEBM, MKV</p>
+                    </div>
+                    <div class="drop-zone-preview" id="dropPreviewVideo" style="display:none">
+                        <div class="preview-media-wrap" id="previewWrapVideo"></div>
+                        <div class="preview-info">
+                            <div class="preview-name" id="previewNameVideo"></div>
+                            <div class="preview-meta" id="previewMetaVideo"></div>
+                            <button class="btn-remove" id="btnRemoveVideo">✕ Remove Video</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fusion Link Icon -->
+                <div class="cross-fusion-indicator">
+                    <div class="fusion-pulse"></div>
+                    <span>🔗 FUSION</span>
+                </div>
+
+                <!-- Audio Input Card -->
+                <div class="cross-drop-card" id="dropZoneAudio">
+                    <input type="file" id="fileInputAudio" accept="audio/*" hidden />
+                    <div class="cross-card-header">
+                        <span class="badge-tag">Stream B</span>
+                        <h4>🔊 Audio Track</h4>
+                    </div>
+                    <div class="cross-drop-content" id="dropContentAudio">
+                        <div class="cross-icon">🎙️</div>
+                        <p class="drop-primary">Drop audio file or <button class="browse-btn"
+                                id="browseBtnAudio">browse</button></p>
+                        <p class="drop-secondary">MP3, WAV, AAC, FLAC</p>
+                    </div>
+                    <div class="drop-zone-preview" id="dropPreviewAudio" style="display:none">
+                        <div class="preview-media-wrap" id="previewWrapAudio">
+                            <div class="audio-icon">🎵</div>
+                        </div>
+                        <div class="preview-info">
+                            <div class="preview-name" id="previewNameAudio"></div>
+                            <div class="preview-meta" id="previewMetaAudio"></div>
+                            <button class="btn-remove" id="btnRemoveAudio">✕ Remove Audio</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Analyze Button -->
+            <div class="analyze-wrap">
+                <button class="btn-analyze" id="btnAnalyze" disabled>
+                    <span class="btn-analyze-icon">⚡</span>
+                    <span id="btnAnalyzeText">Analyze Media</span>
+                    <span class="btn-analyze-shine"></span>
+                </button>
+                <p class="analyze-hint" id="analyzeHint">Our AI will run multimodal forensic analysis across all signals
+                </p>
+            </div>
+        </section>
+
+        <!-- Analysis Pipeline -->
+        <section class="pipeline-section" id="pipelineSection" style="display:none">
+            <div class="section-header">
+                <h2>🔬 Running Analysis Pipeline</h2>
+                <p id="pipelineSubtext">Multimodal forensic scan in progress...</p>
+            </div>
+            <div class="pipeline-stages" id="pipelineStages"></div>
+            <div class="pipeline-log" id="pipelineLog">
+                <div class="log-header">
+                    <span class="log-dot"></span>
+                    <span>System Log</span>
+                </div>
+                <div class="log-body" id="logBody"></div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section" id="resultsSection" style="display:none">
+            <div class="section-header">
+                <h2>📊 Forensic Analysis Report</h2>
+                <p>Complete multimodal authenticity assessment</p>
+            </div>
+
+            <div class="verdict-card" id="verdictCard">
+                <div class="verdict-header">
+                    <div class="verdict-icon" id="verdictIcon"></div>
+                    <div class="verdict-text">
+                        <div class="verdict-label">Authenticity Verdict</div>
+                        <div class="verdict-value" id="verdictValue"></div>
+                    </div>
+                    <div class="verdict-score-wrap">
+                        <canvas id="scoreGauge" width="140" height="140"></canvas>
+                        <div class="score-center">
+                            <span class="score-pct" id="scorePct"></span>
+                            <span class="score-lbl">Fake Score</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="verdict-badges" id="verdictBadges"></div>
+            </div>
+
+            <div class="evidence-grid" id="evidenceGrid"></div>
+
+            <div class="signal-breakdown">
+                <h3>Signal Breakdown</h3>
+                <div class="signal-bars" id="signalBars"></div>
+            </div>
+
+            <div class="metadata-card" id="metadataCard">
+                <h3>📋 File & Modality Metadata</h3>
+                <div class="meta-grid" id="metaGrid"></div>
+            </div>
+
+            <div class="result-actions">
+                <button class="btn-secondary" id="btnNewAnalysis">🔄 Analyze Another File</button>
+                <button class="btn-primary" id="btnExport">📄 Export Report</button>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="how-section" id="howItWorks">
+            <div class="section-header">
+                <h2>How SyntaxError Works</h2>
+                <p>A four-stage multimodal forensic pipeline</p>
+            </div>
+            <div class="pipeline-flow">
+                <div class="flow-step">
+                    <div class="flow-num">01</div>
+                    <div class="flow-icon">📁</div>
+                    <h4>Media Ingestion</h4>
+                    <p>File decoded, video frames extracted, and audio spectrograms computed simultaneously</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-num">02</div>
+                    <div class="flow-icon">🧠</div>
+                    <h4>Unimodal Analysis</h4>
+                    <p>Separate neural models analyze spatial pixel artifacts, GAN signatures, and voice vocoders</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-num">03</div>
+                    <div class="flow-icon">🔗</div>
+                    <h4>Cross-Modal Fusion</h4>
+                    <p>Phoneme-to-viseme lip motion, temporal alignment, and biometric synchronization are correlated
+                    </p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-num">04</div>
+                    <div class="flow-icon">📊</div>
+                    <h4>Verdict + Report</h4>
+                    <p>Fake likelihood probability score, confidence rating, and per-signal forensic breakdown</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="footer-brand">SyntaxError©2026</span>
+            <span class="footer-sep">·</span>
+            <span>HackNex 2026</span>
+            <span class="footer-sep">·</span>
+            <span>Computer Vision · Audio AI · Cross-Modal Digital Forensics</span>
+        </div>
+    </footer>
+
+    <script src="project.js"></script>
+</body>
+
+</html>
